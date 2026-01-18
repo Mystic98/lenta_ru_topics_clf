@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lenta-topic-clf"
+version = "0.1.0"
+description = "Topic classification for Lenta.ru news (Count/TF-IDF/W2V + LogisticRegression)."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+authors = [
+  {name = "Evgenii Antonov"}
+]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scikit-learn",
+  "joblib",
+  "gensim",
+  "spacy",
+  "tqdm",
+  "matplotlib",
+  "corus",
+  "navec"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "ruff",
+  "black",
+]

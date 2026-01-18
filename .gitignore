@@ -1,0 +1,13 @@
+venv
+data/raw/
+data/processed/
+reports
+src/lenta_topic_clf.egg-info
+tests
+.idea
+models
+/data/
+notebooks/main.ipynb
+notebooks/test.ipynb
+.DS_Store
+src/lenta_topic/__pycache__
